@@ -5,10 +5,6 @@ import argparse
 import re
 import datetime
 
-# I got fed up with tapping these out on the web form every month for the index-linked certs.
-# So reverse-engineered the form submission and ended up with this simple script. 
-# It seems like it could be extended to other products with the manipulation of productID.
-
 # TODO: productid is always 55 with index-linked certs - could this be extended to other products?
 parser = argparse.ArgumentParser(description='Get latest NS&I index-linked certs')
 parser.add_argument('--amount', nargs=1, help='amount of investment in pounds, eg 1000', type=int, required=True)

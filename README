@@ -1,0 +1,13 @@
+I got fed up with tapping these out on the web form every month for the index-linked certs.
+See here:
+http://www.nsandi.com/savings-index-linked-savings-certificates
+under "Interest Calculator".
+It was formerly a simple GET, but NS&I decided to make it more opaque recently. I suspect the dread hand of some kind of obfuscating web framework.
+I reverse-engineered the form submission and ended up with this simple script. 
+It seems like it could be extended to other products with the manipulation of productID. This is currently a TODO.
+
+To run:
+
+python nsandi.py
+
+should provide the help you need.
